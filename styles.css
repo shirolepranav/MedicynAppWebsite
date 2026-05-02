@@ -86,6 +86,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.02;
 h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
 
 .h-display { font-size: clamp(56px, 9vw, 144px); line-height: 0.96; }
+.hero-headline.h-display { font-size: 84px; line-height: 0.95; }
 .h-1 { font-size: clamp(40px, 6vw, 88px); }
 .h-2 { font-size: clamp(32px, 4.5vw, 64px); }
 .h-3 { font-size: clamp(24px, 2.6vw, 36px); line-height: 1.1; }
@@ -221,8 +222,8 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
 .hero-headline { display: block; }
 .hero-line {
   display: block;
-  line-height: 1.0;
-  padding-bottom: 0.08em;
+  line-height: 0.95;
+  padding-bottom: 0;
 }
 .hero-line .line-inner {
   display: inline-block;
@@ -478,7 +479,7 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
   display: flex; flex-direction: column; gap: 8px;
   z-index: 3;
 }
-@media (max-width: 920px) { .story-progress { display: none; } }
+.story-progress { display: none; }
 .story-progress-dot {
   width: 24px; height: 2px;
   background: var(--line-2);

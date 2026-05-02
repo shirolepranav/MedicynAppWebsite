@@ -43,9 +43,9 @@ function Gallery() {
                 Crafted for <em>everyday</em> use.
               </h2>
             </div>
-            <p className="lede">
-              Every screen designed with care. Light and dark modes throughout.
-              Built to feel like a part of iOS — never a stranger to it.
+            <p className="lede">Every screen designed with care. Choose between light and dark modes. Built to feel like a part of iOS — never a stranger to it.
+
+
             </p>
           </div>
         </Reveal>

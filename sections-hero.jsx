@@ -57,7 +57,7 @@ function Hero({ layout = "stacked" }) {
   <div className="hero-copy">
       <span className="eyebrow">Medicyn for iOS</span>
       <div style={{ marginTop: 28 }}>{headline}</div>
-      <p className="lede" style={{ marginTop: 32 }}>A private, on-device vault for your complete medical history.
+      <p className="lede" style={{ marginTop: 32 }}>A private, on-device vault for your complete medical history.<br />
 No cloud. No accounts. No tracking. Just your records, organized the way they should have been all along.
 
 
@@ -129,6 +129,10 @@ No cloud. No accounts. No tracking. Just your records, organized the way they sh
 
 
 
+
+
+
+
         // CSS vars used for parallax
       }}>
       <div className="hero-bg"></div>
@@ -142,11 +146,7 @@ No cloud. No accounts. No tracking. Just your records, organized the way they sh
       <div className="marquee-track">
         {all.map((t, i) => <span className="marquee-item" key={i}>{t}</span>)}
       </div>
-    </div>;
-
-}
-
-window.Nav = Nav;
+    </div>;}window.Nav = Nav;
 window.Hero = Hero;
 window.Marquee = Marquee;
 window.APP_STORE_URL = APP_STORE_URL;
