@@ -91,7 +91,7 @@ function Pricing() {
               <li><span className="check">{Icons.check}</span> Up to 6 family profiles</li>
               <li><span className="check">{Icons.check}</span> Scan & OCR for documents</li>
               <li><span className="check">{Icons.check}</span> In-built analytics & smart search</li>
-              <li><span className="check">{Icons.check}</span> Auto-populated Emergency card</li>
+              <li><span className="check">{Icons.check}</span> Emergency card</li>
               <li><span className="check">{Icons.check}</span> All future updates included</li>
             </ul>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 8 }}>

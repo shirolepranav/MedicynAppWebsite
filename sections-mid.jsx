@@ -64,7 +64,7 @@ function Story() {
   {
     eyebrow: "Smart feature 03",
     title: "Emergency card, one tap away.",
-    body: "Ailments, medications, allergies, blood type, severity flags — all the information first responders need, ready to share when seconds matter.",
+    body: "Your card is auto-populated with active ailments, medications, allergies, severity flags — all the information first responders need, ready to share when seconds matter.",
     phone: "assets/screen-emergency.png"
   },
   {
