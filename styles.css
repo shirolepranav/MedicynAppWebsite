@@ -86,7 +86,11 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.02;
 h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
 
 .h-display { font-size: clamp(56px, 9vw, 144px); line-height: 0.96; }
-.hero-headline.h-display { font-size: 84px; line-height: 0.95; }
+.hero-headline.h-display { font-size: clamp(44px, 9vw, 84px); line-height: 0.95; }
+@media (max-width: 720px) {
+  .hero-headline.h-display { font-size: clamp(40px, 11vw, 64px); }
+  .hero-headline .line-inner { white-space: normal; }
+}
 .h-1 { font-size: clamp(40px, 6vw, 88px); }
 .h-2 { font-size: clamp(32px, 4.5vw, 64px); }
 .h-3 { font-size: clamp(24px, 2.6vw, 36px); line-height: 1.1; }
