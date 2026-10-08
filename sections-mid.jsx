@@ -2,7 +2,7 @@
 
 function Privacy() {
   const items = [
-  "No cloud syncing",
+  "No servers of our own",
   "No accounts required",
   "No third-party tracking",
   "No data collection",
