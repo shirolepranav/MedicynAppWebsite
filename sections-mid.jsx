@@ -17,7 +17,7 @@ function Privacy() {
             <h2 className="h-1" style={{ marginTop: 24 }}>
               Your health is <em>yours</em>. We made sure it stays that way.
             </h2>
-            <p className="lede" style={{ marginTop: 28 }}>Most health apps treat your records as data to be moved, mined, and monetized. Medicyn is the opposite. Everything lives on your device — encrypted, offline, and protected by biometrics. We can't see it. Nobody can.
+            <p className="lede" style={{ marginTop: 28 }}>Most health apps treat your records as data to be moved, mined, and monetized. Medicyn is the opposite. Your records live on your device, encrypted and protected by Face ID or Touch ID. The only thing that leaves it is an encrypted backup, and only if you turn that on. We can't see it. Nobody can.
 
 
 
@@ -29,7 +29,7 @@ function Privacy() {
               </div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 16px", background: "rgba(255,255,255,0.06)", borderRadius: 999, fontSize: 13, color: "var(--sage-light)" }}>
                 <span style={{ width: 16, height: 16, display: "inline-flex" }}>{Icons.scan}</span>
-                100% offline
+                Works offline
               </div>
             </div>
           </Reveal>
@@ -151,11 +151,15 @@ function Features() {
   { icon: "vaccine", tone: "sage", title: "Vaccinations", body: "A complete immunization history that travels with you." },
   { icon: "document", tone: "violet", title: "Documents", body: "Scanned medical files, discharge papers, anything else." },
   { icon: "scan", title: "Scan & digitize", body: "Auto-edge detection, perspective correction, OCR text extraction." },
+  { icon: "scan", tone: "warm", title: "Scan to Fill", body: "Scan a prescription or report and the form fills in using the on-device model. Your own entries are never overwritten." },
+  { icon: "document", tone: "sage", title: "Visit Prep", body: "A one-page appointment PDF built from your allergies, medications, conditions and recent reports, with room for questions." },
+  { icon: "pill", title: "Widgets & Siri", body: "Next Dose, Next Appointment and Today widgets, plus Siri and Shortcuts." },
+  { icon: "link", tone: "violet", title: "iPad layout", body: "A sidebar, with records beside their details and two-column dashboards on larger screens." },
   { icon: "emergency", tone: "rose", title: "Emergency card", body: "Critical info, accessible when you need it most." },
   { icon: "bell", tone: "warm", title: "Reminders", body: "Medication and appointment alerts. All running locally." },
   { icon: "search", title: "Global search", body: "Find any record instantly — including text inside scanned files." },
   { icon: "family", tone: "sage", title: "Family profiles", body: "Manage up to six members with fully separate profiles." },
-  { icon: "backup", tone: "violet", title: "Backup & restore", body: "Export your data. Switch devices. Pick up exactly where you left off." }];
+  { icon: "backup", tone: "violet", title: "Backup & restore", body: "Export a backup, optionally passphrase-protected, or turn on encrypted iCloud Backup. Switch devices without losing a thing." }];
 
 
   return (

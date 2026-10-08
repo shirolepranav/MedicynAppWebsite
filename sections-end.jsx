@@ -89,7 +89,8 @@ function Pricing() {
             <ul className="pricing-includes">
               <li><span className="check">{Icons.check}</span> All record types & smart features</li>
               <li><span className="check">{Icons.check}</span> Up to 6 family profiles</li>
-              <li><span className="check">{Icons.check}</span> Scan & OCR for documents</li>
+              <li><span className="check">{Icons.check}</span> Family Sharing supported</li>
+              <li><span className="check">{Icons.check}</span> Scan & OCR, plus Scan to Fill</li>
               <li><span className="check">{Icons.check}</span> In-built analytics & smart search</li>
               <li><span className="check">{Icons.check}</span> Auto-populated Emergency card</li>
               <li><span className="check">{Icons.check}</span> All future updates included</li>
@@ -111,15 +112,23 @@ function FAQ() {
   const items = [
   {
     q: "Does Medicyn really keep all data on-device?",
-    a: "Yes. Medicyn stores everything locally on your iPhone. Nothing is sent to a server, no account is ever created, and there's no analytics or telemetry. You can verify this by enabling Airplane Mode — the app works exactly the same."
+    a: "Yes. Your records are stored on your iPhone or iPad. Nothing is sent to a server, no account is ever created, and there's no analytics or telemetry. The one exception is iCloud Backup, which is off by default. If you turn it on, backups are encrypted with a passphrase you choose and stored in your own iCloud Drive. You can check the rest yourself: the app works the same in Airplane Mode."
   },
   {
     q: "What happens if I lose or replace my phone?",
-    a: "Use the Backup & Restore feature to export your data before you switch. When you install Medicyn on your new device, import the backup file to restore everything. Your purchase is tied to your Apple ID, so 'Restore Purchases' brings back Lifetime Access automatically."
+    a: "Export a backup before you switch, optionally protected with a passphrase, or turn on encrypted iCloud Backup. When you install Medicyn on your new device, import the backup to restore everything. Your purchase is tied to your Apple ID, so 'Restore Purchases' brings back Lifetime Access automatically."
   },
   {
     q: "How does the scan & OCR feature work?",
     a: "Open the camera in Medicyn, point it at a prescription, lab report, or any document. The app automatically detects edges, corrects perspective, and extracts text — all using on-device machine learning. The extracted text is fully searchable across all your records."
+  },
+  {
+    q: "What is Scan to Fill?",
+    a: "Scan a prescription or report and Medicyn pre-fills the form using Apple's on-device model. It only fills fields you haven't typed yet. It requires Apple Intelligence, and on devices that don't support it, the option stays hidden."
+  },
+  {
+    q: "Does Medicyn work on iPad?",
+    a: "Yes. On iPad, Medicyn shows a sidebar, with records beside their details and two-column dashboards. Each device keeps its own records, so use a backup to move them between devices."
   },
   {
     q: "Can I share my records with my doctor?",
@@ -200,7 +209,7 @@ function Footer() {
               <img src="assets/logo.png" alt="" />
               <span>Medicyn</span>
             </div>
-            <p>A private, on-device health records vault for iPhone. No cloud. No accounts. No tracking.</p>
+            <p>A private, on-device health records vault for iPhone and iPad. No accounts. No tracking.</p>
             <AppStoreBadge url={APP_STORE_URL} />
           </div>
           <div className="footer-col">

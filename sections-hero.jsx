@@ -57,8 +57,8 @@ function Hero({ layout = "stacked" }) {
   <div className="hero-copy">
       <span className="eyebrow">Medicyn for iOS</span>
       <div style={{ marginTop: 28 }}>{headline}</div>
-      <p className="lede" style={{ marginTop: 32 }}>A private, on-device vault for your complete medical history.<br />
-No cloud. No accounts. No tracking. Just your records, organized the way they should have been all along.
+      <p className="lede" style={{ marginTop: 32 }}>A private, on-device vault for your complete medical history, for you and your family.<br />
+No accounts. No tracking. Just your records, organized the way they should have been all along.
 
 
     </p>
