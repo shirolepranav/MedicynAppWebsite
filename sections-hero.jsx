@@ -87,12 +87,8 @@ No accounts. No tracking. Just your records, organized the way they should have 
   layout === "split" ?
   <div className="hero-phones" style={{ position: "relative", display: "flex", justifyContent: "center" }}>
       <div className="phone-stack">
-        <div className="hero-shot phone-back float-y-delay">
-          <img src="assets/app-store/iphone-medication.jpg" alt="Medication details in dark mode" />
-        </div>
-        <div className="hero-shot phone-front float-y">
-          <img src="assets/app-store/iphone-home.jpg" alt="Medicyn Home screen on iPhone" />
-        </div>
+        <Phone src="assets/screen-records-dark.png" size="sm" className="phone-back float-y-delay" />
+        <Phone src="assets/screen-home.png" size="md" className="phone-front float-y" />
       </div>
     </div> :
 

@@ -338,31 +338,6 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
 /* hero floating animation */
 .float-y { animation: floatY 6s ease-in-out infinite; }
 .float-y-delay { animation: floatY 6s ease-in-out 1.5s infinite; }
-
-/* Hero App Store image: the bottom of the composite is the phone, so the
-   frame crops away the headline and chips at the top */
-.hero-shot {
-  width: min(420px, 86vw);
-  height: calc(min(420px, 86vw) * 1.38);
-  overflow: hidden;
-  border-radius: 32px;
-}
-.hero-shot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
-/* Split hero: front phone larger, back phone smaller and rotated behind it */
-.hero-shot.phone-front {
-  width: min(320px, 80vw);
-  height: calc(min(320px, 80vw) * 1.38);
-}
-.hero-shot.phone-back {
-  width: min(240px, 60vw);
-  height: calc(min(240px, 60vw) * 1.38);
-}
 @keyframes floatY {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
