@@ -354,6 +354,15 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
   object-fit: cover;
   object-position: bottom;
 }
+/* Split hero: front phone larger, back phone smaller and rotated behind it */
+.hero-shot.phone-front {
+  width: min(320px, 80vw);
+  height: calc(min(320px, 80vw) * 1.38);
+}
+.hero-shot.phone-back {
+  width: min(240px, 60vw);
+  height: calc(min(240px, 60vw) * 1.38);
+}
 @keyframes floatY {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
