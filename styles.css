@@ -553,11 +553,18 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--teal); }
   will-change: transform;
 }
 .gallery-card {
-  width: 280px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+/* App Store composites: sized by height so the iPad image gets its own width */
+.gallery-shot {
+  display: block;
+  height: min(600px, 72vh);
+  width: auto;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.35);
 }
 .gallery-card .label {
   font-family: var(--mono);

@@ -2,12 +2,13 @@
 
 function Gallery() {
   const cards = [
-  { src: "assets/screen-home.png", label: "Home", tag: "Light mode" },
-  { src: "assets/screen-records-dark.png", label: "All Records", tag: "Dark mode" },
-  { src: "assets/screen-medication.png", label: "Medication detail", tag: "Light mode" },
-  { src: "assets/screen-records-grid-dark.png", label: "Categories", tag: "Dark mode" },
-  { src: "assets/screen-analytics-1.png", label: "Adherence", tag: "Analytics" },
-  { src: "assets/screen-analytics-2.png", label: "Frequency", tag: "Analytics" }];
+  { src: "assets/app-store/iphone-home.jpg", alt: "Medicyn Home screen on iPhone" },
+  { src: "assets/app-store/ipad-home.jpg", alt: "Medicyn Home screen on iPad, with sidebar" },
+  { src: "assets/app-store/iphone-records.jpg", alt: "Records screen with eight record types" },
+  { src: "assets/app-store/iphone-medication.jpg", alt: "Medication details in dark mode" },
+  { src: "assets/app-store/iphone-appointments.jpg", alt: "Appointments with a reminder set" },
+  { src: "assets/app-store/iphone-emergency.jpg", alt: "Emergency card with severe allergies and conditions" },
+  { src: "assets/app-store/iphone-analytics.jpg", alt: "Health analytics with doctor visits and adherence" }];
 
 
   const trackRef = React.useRef(null);
@@ -53,7 +54,7 @@ function Gallery() {
       <div className="gallery-track" ref={trackRef}>
         {cards.map((c, i) =>
         <div className="gallery-card" key={i}>
-            <Phone src={c.src} size="md" />
+            <img className="gallery-shot" src={c.src} alt={c.alt} loading="lazy" />
           </div>
         )}
       </div>
