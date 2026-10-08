@@ -86,9 +86,8 @@ No accounts. No tracking. Just your records, organized the way they should have 
     </div> :
   layout === "split" ?
   <div className="hero-phones" style={{ position: "relative", display: "flex", justifyContent: "center" }}>
-      <div className="phone-stack">
-        <Phone src="assets/screen-records-dark.png" size="sm" className="phone-back float-y-delay" />
-        <Phone src="assets/screen-home.png" size="md" className="phone-front float-y" />
+      <div className="hero-shot float-y">
+        <img src="assets/app-store/iphone-home.jpg" alt="Medicyn Home screen on iPhone" />
       </div>
     </div> :
 
